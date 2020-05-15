@@ -359,7 +359,10 @@ footer nav a {
     }
     .stretch {
         display: flex;
+        justify-content: center;
         height: auto;
+        width: auto;
+        margin: .8rem;
     }
     header {
         display: flex;
@@ -386,5 +389,19 @@ footer nav a {
         align-content: center;
         flex-wrap: wrap;
         margin-top: 2.5rem;
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 }
