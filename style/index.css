@@ -1,407 +1,422 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+        /* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
 License: none (public domain)
 */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/*karmens header code*/
-
-.outer-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* margin: 4rem; */
-}
-
-.icon {
-    width: 8.5rem;
-}
-
-nav {
-    display: flex;
-}
-
-a {
-    text-decoration: none;
-    /* padding: .6rem; */
-    color: black;
-    display: flex;
-    justify-content: center;
-}
-
-.navbarlinks {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem;
-}
-
-.stretch {
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 95%;
-    margin: 3rem;
-    /* margin-left: 9.5rem; */
-}
-
-
-/*karmens header code end*/
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
-}
-
-p {
-    line-height: 1.4;
-}
-
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;
-}
-
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    /* background-color: black; */
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/*karmens boxes*/
-
-.tinybox1:nth-child(1) {
-    background-color: teal;
-}
-
-.tinybox2:nth-child(2) {
-    background-color: gold;
-}
-
-.tinybox3:nth-child(3) {
-    background-color: cadetblue;
-}
-
-.tinybox4:nth-child(4) {
-    background-color: coral;
-}
-
-.tinybox5:nth-child(5) {
-    background-color: crimson;
-}
-
-.tinybox6:nth-child(6) {
-    background-color: forestgreen;
-}
-
-.tinybox7:nth-child(7) {
-    background-color: darkorchid;
-}
-
-.tinybox8:nth-child(8) {
-    background-color: hotpink;
-}
-
-.tinybox9:nth-child(9) {
-    background-color: indigo;
-}
-
-.tinybox10:nth-child(10) {
-    background-color: dodgerblue;
-}
-
-
-/*karmens boxes end*/
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
-footer {
-    width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
-
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
-
-
-/*karmens media queries code*/
-
-@media(max-width: 500px) {
-    body {
-        overflow-y: scroll;
-        background-color: yellow;
-        height: 100%;
-    }
-    .outer-wrapper {
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 100%
-    }
-    .navwithimg {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .icon {
-        display: flex;
-        margin-top: 4.2rem;
-    }
-    .stretch {
-        display: flex;
-        justify-content: center;
-        height: auto;
-        width: auto;
-        margin: .8rem;
-    }
-    header {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    .navbarlinks {
-        flex-direction: column;
-        align-items: center;
-    }
-    a {
-        text-decoration: none;
-        margin: .4rem;
-    }
-    /*Bottom Content MQ*/
-    .container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .top-content {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-        margin-top: 2.5rem;
-    }
-    h2 {
-        display: flex;
-        justify-content: center;
-    }
-    .boxes {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-    .bottom-content {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-}
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+        /*karmens header code*/
+        
+        .outer-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* margin: 4rem; */
+        }
+        
+        .icon {
+            width: 8.5rem;
+        }
+        
+        nav {
+            display: flex;
+        }
+        
+        a {
+            text-decoration: none;
+            /* padding: .6rem; */
+            color: black;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .navbarlinks {
+            display: flex;
+            justify-content: space-around;
+            margin: 1rem;
+        }
+        
+        .stretch {
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 95%;
+            margin: 3rem;
+            /* margin-left: 9.5rem; */
+        }
+        /*karmens header code end*/
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        p {
+            line-height: 1.4;
+        }
+        
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        
+        .top-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed black;
+        }
+        
+        .top-content .text-container {
+            width: 48%;
+            padding: 0 1%;
+            padding-bottom: 20px;
+        }
+        
+        .middle-content {
+            margin-bottom: 20px;
+            border-bottom: 1px dashed black;
+        }
+        
+        .middle-content h2 {
+            padding: 0 2%;
+            margin-bottom: 0;
+        }
+        
+        .middle-content .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .middle-content .boxes .box {
+            width: 12.5%;
+            height: 100px;
+            /* background-color: black; */
+            margin: 20px 2.5%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*karmens boxes*/
+        
+        .tinybox1:nth-child(1) {
+            background-color: teal;
+        }
+        
+        .tinybox2:nth-child(2) {
+            background-color: gold;
+        }
+        
+        .tinybox3:nth-child(3) {
+            background-color: cadetblue;
+        }
+        
+        .tinybox4:nth-child(4) {
+            background-color: coral;
+        }
+        
+        .tinybox5:nth-child(5) {
+            background-color: crimson;
+        }
+        
+        .tinybox6:nth-child(6) {
+            background-color: forestgreen;
+        }
+        
+        .tinybox7:nth-child(7) {
+            background-color: darkorchid;
+        }
+        
+        .tinybox8:nth-child(8) {
+            background-color: hotpink;
+        }
+        
+        .tinybox9:nth-child(9) {
+            background-color: indigo;
+        }
+        
+        .tinybox10:nth-child(10) {
+            background-color: dodgerblue;
+        }
+        /*karmens boxes end*/
+        
+        .bottom-content {
+            display: flex;
+            margin: 0 2% 20px;
+            justify-content: space-around;
+        }
+        
+        .bottom-content .text-container {
+            padding-right: 4%;
+        }
+        
+        .bottom-content .text-container:last-child {
+            padding-right: 0;
+        }
+        
+        footer {
+            width: 100%;
+            background: black;
+        }
+        
+        footer nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 2%;
+            font-size: 14px;
+        }
+        
+        footer nav a {
+            color: white;
+            text-decoration: none;
+        }
+        /*karmens media queries code*/
+        
+        @media(max-width: 500px) {
+            body {
+                overflow-y: scroll;
+                height: 100%;
+            }
+            .outer-wrapper {
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                width: 100%
+            }
+            .navwithimg {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .icon {
+                display: flex;
+                margin-top: 4.2rem;
+            }
+            .stretch {
+                display: flex;
+                justify-content: center;
+                height: auto;
+                width: auto;
+                margin: .8rem;
+            }
+            header {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+            .navbarlinks {
+                flex-direction: column;
+                align-items: center;
+            }
+            a {
+                text-decoration: none;
+                margin: .4rem;
+            }
+            /*Bottom Content MQ*/
+            .container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .top-content {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                flex-wrap: wrap;
+                margin-top: 2.5rem;
+            }
+            h2 {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+            .boxes {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+            }
+            .bottom-content {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                flex-wrap: nowrap;
+                text-align: center;
+                width: 45%;
+                margin-left: 14rem;
+            }
+            /* .botbox {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                flex-wrap: nowrap;
+                margin: .8rem;
+                width: 55px;
+            } */
+            nav {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: center;
+                margin-left: 9.5rem;
+            }
+            p {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                margin: .8rem;
+            }
+        }
