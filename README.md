@@ -31,15 +31,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+1. If you were to describe semantic HTML to the next cohort of students, what would you say? I would say that semantic HTML is a principle set in place to ensure that you are writing code in a logical way. No h1's at the bottom or labling non nav items as nav. Tags and code should make sense and should read from top to bottom. Almost like a book.
 
-2. What are the 4 areas of the box model?
+2. What are the 4 areas of the box model? padding, margin, content, and border.
 
-3. While using flexbox, what axis does the following property work on: ```align-items: center```?
+3. While using flexbox, what axis does the following property work on: ```align-items: center```? the cross axis.
 
-4. Explain why git is valuable to a team of developers.
+4. Explain why git is valuable to a team of developers. Because you can work collaberativly and you can revert chnages. 
 
-5. Define mobile-first design in your own words.
+5. Define mobile-first design in your own words. Mobile first means designing websites for moblie first then desktop second. When adding responsive code to our css we can start by styling for mobile first then desktop second. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -78,7 +78,7 @@ You will also notice there are 10 boxes on the home page that need background co
 * [ ] box7: `darkorchid`
 * [ ] box8: `hotpink`
 * [ ] box9: `indigo`
-* [ ] box10: `dodgerblue`
+* [ ] box10: dodgerblue
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
